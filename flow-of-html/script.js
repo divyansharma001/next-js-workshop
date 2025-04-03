@@ -1,1 +1,1 @@
-alert("The script is running!");
+alert("th pqge hqs ben rrenefere");
