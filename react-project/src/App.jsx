@@ -1,19 +1,22 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+
   const [age, setAge] = useState(0)
 
-  useEffect(() => {
-    console.log('Component mounted')
+  // useEffect(() => {
+  //   console.log('Component mounted')
+  // }, [])
+
+  useEffect(()=>{
+    console.log("Component mounted")
     fetch('https://jsonplaceholder.typicode.com/todos/1')
       .then(response => response.json())
       .then(json => console.log(json))
-  }, [])
-  
+  },[])
+
 
   return (
     <>
@@ -33,3 +36,12 @@ function App() {
 }
 
 export default App
+
+// export default function App(props) {
+//   return(
+//     <>
+//     <div>hello</div>
+//    <div>{props.age}</div>
+//    </>
+//   )
+// }
