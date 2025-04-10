@@ -17,7 +17,6 @@ app.get('/', (req, res) => {
             state: 'Delhi',
             country: 'India',
             pincode: '110058'
-        
     }
   });
 });
