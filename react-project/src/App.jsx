@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './App.css'
+import Usercard from './components/Usercard'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,16 +20,7 @@ function App() {
 
   return (
     <>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-      <div className="card">
-        <button onClick={() => setAge((age) => age + 1)}>
-          age is {age}
-        </button>
-        </div>
+      <Usercard/>
      
     </>
   )
