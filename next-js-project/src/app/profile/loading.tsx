@@ -7,4 +7,4 @@ export default function Loading() {
     )
 }
 
-//should only use in inside component
+//should only use in inside component 

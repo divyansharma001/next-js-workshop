@@ -1,5 +1,5 @@
 export default async function User() {
-    const res = await fetch('http://localhost:5000');  //can connect with database too
+    const res = await fetch('http://localhost:3000/api/v1/user');  //can connect with database too
     const data = await res.json();
 
     await new Promise(r => setTimeout(r, 2000)); // Simulate a delay
