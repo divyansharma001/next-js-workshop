@@ -59,6 +59,8 @@ export default async function User() {
     const res = await fetch('http://localhost:5000');
     const data = await res.json();
 
+    await new Promise(r => setTimeout(r, 2000)); // Simulate a delay
+
     return (
         <div className='user'>
             <h1>User Page</h1>
